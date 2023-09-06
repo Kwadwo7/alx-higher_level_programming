@@ -47,20 +47,18 @@ class Rectangle:
 
     def perimeter(self):
         """Return the perimeter of the Rectangle."""
-            if self.__width == 0 or self.__height == 0:
-                return (0)
-            return ((self.__width * 2) + (self.__height * 2))
+        if self.__width == 0 or self.__height == 0:
+            return (0)
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Return the printable representation of  the Rectangle.
+        """Return the printable representation of the Rectangle.
 
-        
         Represents the rectangle with the # character.
         """
         if self.__width == 0 or self.__height == 0:
             return ("")
 
-        
         rect = []
         for i in range(self.__height):
             [rect.append('#') for j in range(self.__width)]
